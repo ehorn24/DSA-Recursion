@@ -46,3 +46,17 @@ const stringSplitter = function (string, sep) {
   }
   return arr;
 };
+
+const fibonacci = function (num) {
+  if (num < 2) {
+    return num;
+  }
+  return fibonacci(num - 1) + fibonacci(num - 2);
+};
+
+const factorial = function (num) {
+  if (num === 1) {
+    return 1;
+  }
+  return num * factorial(num - 1);
+};
